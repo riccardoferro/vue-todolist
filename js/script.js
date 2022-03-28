@@ -37,8 +37,11 @@ Milestone 1
   -If the property done is true, visualize the text with a line-through. (DID)
 
 Milestone 2
-  -Visualize beside each item an "x" : by clicking on it the to do will be remove from the list
+  -Visualize beside each item an "x" : by clicking on it the to do will be remove from the list(DID)
 
+Milestone 3
+  -insert an input text and a button add. (DID)
+  -clicking on the button add the text digitate will get read and used to create an other task
 
 */
 
