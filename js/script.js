@@ -92,14 +92,11 @@ const list = new Vue({
       this.listToDo.splice(i, 1);
     },
     addNewToDo() {
-      const newToDo = this.newToDo;
+      console.log(this.newToDo.text);
 
-      newToDo.text.trim();
+      console.log(this.newToDo);
 
-      if (newToDo.text.length > 0) {
-        this.listToDo.unshift(this.newToDo);
-        this.newToDo.text = "";
-      }
+      this.listToDo.unshift(this.newToDo);
     },
   },
 });
