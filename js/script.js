@@ -13,7 +13,7 @@ Stampare all'interno di una lista, un item per ogni todo.
 Se la proprietà done è uguale a true, visualizzare il testo del todo sbarrato.
 
 MILESTONE 2
-Visualizzare a fianco ad ogni item ha una "x": cliccando su di essa, il todo viene rimosso dalla lista.
+Visualizzare a fianco ad ogni item una "x": cliccando su di essa, il todo viene rimosso dalla lista.
 
 MILESTONE 3
 Predisporre un campo di input testuale e un pulsante "aggiungi": cliccando sul pulsante, 
@@ -36,7 +36,8 @@ Milestone 1
   -Print inside of a list the item/object for each to do. (DID)
   -If the property done is true, visualize the text with a line-through. (DID)
 
-
+Milestone 2
+  -Visualize beside each item an "x" : by clicking on it the to do will be remove from the list
 
 
 */
@@ -75,7 +76,7 @@ const list = new Vue({
     //If the property done is true, visualize the text with a line-through.
     workDone(i) {
       if (this.listToDo[i].done === true) {
-        return "done";
+        return "done-rf";
       }
     },
   },
