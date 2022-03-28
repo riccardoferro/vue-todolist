@@ -29,6 +29,22 @@ Bonus:
 
 /******* CODE MAIN ********/
 
+//make a list of things to do
+
+const listToDo = [
+  {
+    text: "grocery shopping",
+    done: false,
+  },
+  {
+    text: "study",
+    done: false,
+  },
+  {
+    text: "water the plants",
+    done: false,
+  },
+];
 /******* CODE MAIN ********/
 
 /****** VUE JS ********/
@@ -36,7 +52,10 @@ Bonus:
 const list = new Vue({
   el: "#list",
 
-  data: {},
+  data: {
+    //insert in data the list of things to do
+    listToDo,
+  },
 
   methods: {},
 });
