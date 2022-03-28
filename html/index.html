@@ -12,5 +12,17 @@
 
     <title>ToDoList</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>List of things to do</h1>
+    </header>
+    <main>
+      <div id="list" class="container">
+        <ul>
+          <!-- item -->
+          <li v-for="todo in listToDo">{{ todo.text }}</li>
+        </ul>
+      </div>
+    </main>
+  </body>
 </html>
