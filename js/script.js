@@ -73,6 +73,10 @@ const list = new Vue({
   data: {
     //insert in data the list of things to do
     listToDo,
+    newToDo: {
+      text: "",
+      done: false,
+    },
   },
 
   methods: {
@@ -86,6 +90,16 @@ const list = new Vue({
     //by clicking on the icon x the to do will be remove from the list
     removeToDo(i) {
       this.listToDo.splice(i, 1);
+    },
+    addNewToDo() {
+      const newToDo = this.newToDo;
+
+      newToDo.text.trim();
+
+      if (newToDo.text.length > 0) {
+        this.listToDo.unshift(this.newToDo);
+        this.newToDo.text = "";
+      }
     },
   },
 });

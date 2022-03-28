@@ -46,8 +46,12 @@
         </ul>
         <!-- Input text and button add -->
         <div>
-          <input placeholder="insert some text dude" />
-          <button>Add</button>
+          <input
+            type="text"
+            v-model="newToDo.text"
+            placeholder="insert some text dude"
+          />
+          <button @click="addNewToDo()">Add</button>
         </div>
       </div>
     </main>
