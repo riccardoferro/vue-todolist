@@ -26,3 +26,18 @@ Bonus:
  (se done era uguale a false, impostare true e viceversa)
 
 */
+
+/******* CODE MAIN ********/
+
+/******* CODE MAIN ********/
+
+/****** VUE JS ********/
+
+const list = new Vue({
+  el: "#list",
+
+  data: {},
+
+  methods: {},
+});
+/****** VUE JS ********/
