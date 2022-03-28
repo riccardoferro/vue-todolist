@@ -33,14 +33,14 @@
       <h1>List of things to do</h1>
     </header>
     <main>
-      <div id="list" class="container-rf">
+      <div id="list" class="container-rf" tabindex="0">
         <ul>
           <li
             v-for="(todo,index) in listToDo"
             class="d-flex align-items-center gap-3 pt-2"
           >
             <!-- item -->
-            <i class="fa-solid fa-square-xmark"></i>
+            <i class="fa-solid fa-square-xmark" @click="removeToDo(index)"></i>
             <div :class="workDone(index)">{{ todo.text }}</div>
           </li>
         </ul>

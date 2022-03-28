@@ -79,6 +79,11 @@ const list = new Vue({
         return "done-rf";
       }
     },
+
+    //by clicking on the icon x the to do will be remove from the list
+    removeToDo(i) {
+      this.listToDo.splice(i, 1);
+    },
   },
 });
 /****** VUE JS ********/
