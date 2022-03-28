@@ -27,6 +27,20 @@ Bonus:
 
 */
 
+/*
+STEP-BY-STEP 
+
+- Created an object with property text and done. (DID)
+
+Milestone 1
+  -Print inside of a list the item/object for each to do. (DID)
+  -If the property done is true, visualize the text with a line-through. (DID)
+
+
+
+
+*/
+
 /******* CODE MAIN ********/
 
 //make a list of things to do
@@ -42,7 +56,7 @@ const listToDo = [
   },
   {
     text: "water the plants",
-    done: false,
+    done: true,
   },
 ];
 /******* CODE MAIN ********/
@@ -57,6 +71,13 @@ const list = new Vue({
     listToDo,
   },
 
-  methods: {},
+  methods: {
+    //If the property done is true, visualize the text with a line-through.
+    workDone(i) {
+      if (this.listToDo[i].done === true) {
+        return "done";
+      }
+    },
+  },
 });
 /****** VUE JS ********/

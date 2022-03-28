@@ -20,7 +20,9 @@
       <div id="list" class="container">
         <ul>
           <!-- item -->
-          <li v-for="todo in listToDo">{{ todo.text }}</li>
+          <li v-for="(todo,index) in listToDo">
+            <div :class="workDone(index)">{{ todo.text }}</div>
+          </li>
         </ul>
       </div>
     </main>
