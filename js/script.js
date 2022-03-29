@@ -63,6 +63,11 @@ const listToDo = [
     done: true,
   },
 ];
+
+const newToDo = {
+  text: "",
+  done: false,
+};
 /******* CODE MAIN ********/
 
 /****** VUE JS ********/
@@ -73,10 +78,7 @@ const list = new Vue({
   data: {
     //insert in data the list of things to do
     listToDo,
-    newToDo: {
-      text: "",
-      done: false,
-    },
+    newToDo,
   },
 
   methods: {
@@ -93,10 +95,14 @@ const list = new Vue({
     },
     addNewToDo() {
       console.log(this.newToDo.text);
-
-      console.log(this.newToDo);
-
-      this.listToDo.unshift(this.newToDo);
+      console.log(this.newToDo.done);
+      if (this.newToDo.text.length > 0) {
+        this.listToDo.unshift({
+          text: this.newToDo.text,
+          done: false,
+        });
+        this.newToDo.text = "";
+      }
     },
   },
 });
